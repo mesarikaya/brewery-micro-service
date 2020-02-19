@@ -1,4 +1,4 @@
-package com.mes.microservices.brewerymicroservice.web.model;
+package com.mes.microservices.brewerymicroservice.domain;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -10,13 +10,13 @@ import javax.validation.constraints.Size;
 import java.util.UUID;
 
 /**
- * Created by mesar on 2/7/2020
+ * Created by mesar on 2/12/2020
  */
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class CustomerDto {
+public class Customer {
 
     private UUID id;
     @NotBlank

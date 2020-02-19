@@ -1,4 +1,4 @@
-package com.mes.microservices.brewerymicroservice.web.model;
+package com.mes.microservices.brewerymicroservice.domain;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -9,17 +9,17 @@ import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Null;
 import javax.validation.constraints.Positive;
-import java.time.OffsetDateTime;
+import java.sql.Timestamp;
 import java.util.UUID;
 
 /**
- * Created by mesarikaya on 2/7/2020
+ * Created by mesar on 2/12/2020
  */
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class BeerDto {
+public class Beer {
 
     @Null
     private UUID id;
@@ -32,6 +32,7 @@ public class BeerDto {
     @NotNull
     private Long upc;
 
-    private OffsetDateTime createdDate;
-    private OffsetDateTime lastUpdatedDate;
+
+    private Timestamp createdDate;
+    private Timestamp lastUpdatedDate;
 }
